@@ -38,9 +38,10 @@ Then you can run the application with the command:
 
     cargo run
 
-To run with hot deployment support, you need to have **systemfd** installed:
+To run with hot deployment support, you need to have **systemfd** and **cargo-watch** installed:
 
     cargo install systemfd
+    cargo install cargo-watch
     systemfd --no-pid -s http::0.0.0.0:8000 -- cargo watch -x run
 
 
